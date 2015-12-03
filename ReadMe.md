@@ -74,7 +74,8 @@ You could also just save the raw `.js` source code.
 If you want to install from the terminal use wget
 
 ```
-> wget --no-check-certificate http://raw.githubusercontent.com/JoyKrishnaMondal/SimpleBrowserifyWatch/master/SimpleBrowserifyWatch.js
+> wget --no-check-certificate \
+http://raw.githubusercontent.com/JoyKrishnaMondal/SimpleBrowserifyWatch/master/SimpleBrowserifyWatch.js
 ```
 
 
