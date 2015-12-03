@@ -7,7 +7,7 @@
 
 2. Even for a simple app it takes a lot of time for browserify to compile all your dependencies. 
 
-3. A simple solution is to have your 'static.js' assets compiled **once** - however if you are like me you like playing around with your static files too ! `npm` makes it simple to quickly play around with different modules.
+3. A simple solution is to have your 'static.js' assets compiled **once** - however it does not make much sense to constantly recompile using browserify just you added a new `npm` module - its faster to set up a watch.
 
 4. This is why I created `simple-browserify-watch` - to assit workflows that use a `header.js` file that outputs all your static depedencies like jquery/angular/react etc. 
 
