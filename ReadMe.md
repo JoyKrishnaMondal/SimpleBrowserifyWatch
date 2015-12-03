@@ -1,11 +1,9 @@
-###SimpleBrowserifyWatch - require management using unfashionable techniques.
+###SimpleBrowserifyWatch - using header files with browserify.
 
 
 ###Why
 
-1. Dependency management is a nightmare for front-end programmers - `browserify` elegantly manages complexities in dependencies. However as you start using a lot of
-
-`requires` browserify slows down. 
+1. Dependency management is a nightmare for front-end programmers - `browserify` elegantly manages complexities in dependencies. However as you start using a lot of `requires` browserify slows down. 
 
 2. Even for a simple app it takes a lot of time for browserify to compile all your dependencies. 
 
