@@ -26,7 +26,7 @@ Lets say you have a simple application
 <script type="text/javascript" src ="app.js"></script>
 ```
 
-You are constantly making rapid changes to your `app.js` file but hardly ever touch `static.js`. This type of workflow becames more logical as your increase the number of dependencies. Its also powerful since it enables the browser to cache the `static.js` file.
+You are constantly making rapid changes to your `app.js` file but hardly ever touch `static.js`. This type of workflow becames more logical as your increase the number of dependencies. Its also powerful since it enables the browser to cache your `static.js` file.
 
 
 ```javascript
