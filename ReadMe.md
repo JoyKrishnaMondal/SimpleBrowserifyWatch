@@ -1,4 +1,4 @@
-###SimpleBrowserifyWatch - Manage your front-end using unfashionable techniques.
+###SimpleBrowserifyWatch - require management using unfashionable techniques.
 
 
 ###Why
