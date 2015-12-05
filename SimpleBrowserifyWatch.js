@@ -30,7 +30,7 @@
       if (fs.existsSync(StaticFileName)) {
         console.error(warn("Warning : " + StaticFileName + " already exists."));
       }
-      answer1 = readline.question(pink("Do you want to rewrite " + StaticFileName + " (y/n) ? "));
+      answer1 = readline.question(Yellow + ("Do you want to rewrite " + StaticFileName + " (y/n) ? ") + White);
       switch (answer1) {
       case "y":
         break;
