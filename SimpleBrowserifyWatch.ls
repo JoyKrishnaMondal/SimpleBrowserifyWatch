@@ -76,9 +76,9 @@ SimpleBrowserifyWatch = (Dependencies)->
 			console.log string
 			return
 
-		process.stdout.clearLine!
-		process.stdout.cursorTo 0
-		process.stdout.write string
+		process.stderr.clearLine!
+		process.stderr.cursorTo 0
+		process.stderr.write string
 
 		return
 
@@ -99,7 +99,7 @@ SimpleBrowserifyWatch = (Dependencies)->
 
 		if problem
 
-			console.error error problem
+			log problem
 			return
 
 		problem <-! fs.writeFile CompiledName,buff.toString!

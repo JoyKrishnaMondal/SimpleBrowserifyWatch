@@ -59,9 +59,9 @@
         console.log(string);
         return;
       }
-      process.stdout.clearLine();
-      process.stdout.cursorTo(0);
-      process.stdout.write(string);
+      process.stderr.clearLine();
+      process.stderr.cursorTo(0);
+      process.stderr.write(string);
     };
     TryCatchFn = function(Fn){
       var Problem;
@@ -78,7 +78,7 @@
       b.require("./" + filename);
       return b.bundle(function(problem, buff){
         if (problem) {
-          console.error(error(problem));
+          log(problem);
           return;
         }
         fs.writeFile(CompiledName, buff.toString(), function(problem){
