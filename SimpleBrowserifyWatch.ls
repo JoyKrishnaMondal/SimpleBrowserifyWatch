@@ -146,7 +146,9 @@ SimpleBrowserifyWatch = (Dependencies)->
 
 	return # END OF MODULE
 
-ListOfModules = ["browserify@4.0.0","prelude-ls","cli-color","readline-sync","chokidar"]
+ListOfRequires = ["browserify","prelude-ls","cli-color","readline-sync","chokidar"]
+
+ExecInstallArg = ["browserify@4.0.0","prelude-ls","cli-color","readline-sync","chokidar"]
 
 ListOfModuleNames = ["browserify","_","cli","readline","chokidar"]
 
@@ -169,7 +171,7 @@ PutRequiredModuleOnMain = ->
 
 	try
 		for I from 0 til ListOfModules.length
-			eval "Main.#{ListOfModuleNames[I]} = require('#{ListOfModules[I]}')"
+			eval "Main.#{ListOfModuleNames[I]} = require('#{ListOfRequires[I]}')"
 		return true
 	catch Problem
 		console.error Red + Problem + White
@@ -205,9 +207,9 @@ InstallAllModulesUsingNpm = ->
 
 	try
 
-		for I from 0 til ListOfModules.length
+		for I from 0 til ExecInstallArg.length
 
-			RunSpawn ListOfModules[I]
+			RunSpawn ExecInstallArg[I]
 
 		return true
 
