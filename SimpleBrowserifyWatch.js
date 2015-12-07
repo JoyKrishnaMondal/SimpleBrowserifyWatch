@@ -59,9 +59,9 @@
         console.log(string);
         return;
       }
-      process.stderr.clearLine();
-      process.stderr.cursorTo(0);
-      process.stderr.write(string);
+      process.stdout.clearLine();
+      process.stdout.cursorTo(0);
+      process.stdout.write(string);
     };
     TryCatchFn = function(Fn){
       var Problem;
