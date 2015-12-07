@@ -124,12 +124,12 @@
     NpmTerminal = "npm";
   }
   Main = {};
-  Main.CountOfRequiredModules = ListOfModules.length;
+  Main.CountOfRequiredModules = ListOfModuleNames.length;
   Main.CountAlreadyInstalled = 0;
   PutRequiredModuleOnMain = function(){
     var i$, to$, I, Problem;
     try {
-      for (i$ = 0, to$ = ListOfModules.length; i$ < to$; ++i$) {
+      for (i$ = 0, to$ = ListOfModuleNames.length; i$ < to$; ++i$) {
         I = i$;
         eval("Main." + ListOfModuleNames[I] + " = require('" + ListOfRequires[I] + "')");
       }

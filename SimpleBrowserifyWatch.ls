@@ -163,14 +163,14 @@ else
 
 Main = {}
 
-Main.CountOfRequiredModules = ListOfModules.length
+Main.CountOfRequiredModules = ListOfModuleNames.length
 
 Main.CountAlreadyInstalled = 0
 
 PutRequiredModuleOnMain = ->
 
 	try
-		for I from 0 til ListOfModules.length
+		for I from 0 til ListOfModuleNames.length
 			eval "Main.#{ListOfModuleNames[I]} = require('#{ListOfRequires[I]}')"
 		return true
 	catch Problem
