@@ -146,7 +146,7 @@ SimpleBrowserifyWatch = (Dependencies)->
 
 	return # END OF MODULE
 
-ListOfModules = ["browserify","prelude-ls","cli-color","readline-sync","chokidar"]
+ListOfModules = ["browserify@4.0.0","prelude-ls","cli-color","readline-sync","chokidar"]
 
 ListOfModuleNames = ["browserify","_","cli","readline","chokidar"]
 
