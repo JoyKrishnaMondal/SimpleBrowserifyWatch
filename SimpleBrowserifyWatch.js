@@ -78,7 +78,7 @@
       b.require("./" + filename);
       return b.bundle(function(problem, buff){
         if (problem) {
-          log(problem);
+          log(error(problem.toString()));
           return;
         }
         fs.writeFile(CompiledName, buff.toString(), function(problem){

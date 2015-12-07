@@ -99,7 +99,7 @@ SimpleBrowserifyWatch = (Dependencies)->
 
 		if problem
 
-			log problem
+			log error problem.toString!
 			return
 
 		problem <-! fs.writeFile CompiledName,buff.toString!
